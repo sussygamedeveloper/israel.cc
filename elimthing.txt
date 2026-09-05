@@ -1,0 +1,514 @@
+if game:GetService("ReplicatedFirst"):FindFirstChild("Elimination") then
+	game:GetService("ReplicatedFirst"):FindFirstChild("Elimination"):Destroy()
+end
+
+local dir = Instance.new("Folder")
+dir.Parent = game:GetService("ReplicatedFirst")
+dir.Name = "Elimination"
+
+local FFS2 = Instance.new("Sound")
+FFS2.Parent = dir
+FFS2.Name = "FFireSoundTWO"
+FFS2.SoundId = "rbxassetid://3466984142"
+FFS2.RollOffMaxDistance = 10000
+FFS2.RollOffMinDistance = 12
+FFS2.RollOffMode = Enum.RollOffMode.InverseTapered
+FFS2.PlaybackSpeed = 2.5
+FFS2.Volume = 0.5
+
+local CSE = Instance.new("ChorusSoundEffect")
+CSE.Parent = dir
+CSE.Depth = 1
+CSE.Enabled = true
+CSE.Mix = 1
+CSE.Priority = 0
+CSE.Rate = 0.25
+
+local SA = Instance.new("SurfaceAppearance")
+SA.Parent = dir
+SA.Name = "SurfaceAppearance"
+SA.Color = Color3.fromRGB(255, 255, 255)
+SA.EmissiveStrength = 1
+SA.ColorMap = "rbxassetid://94164067871562"
+SA.MetalnessMap = "rbxassetid://133337669834230"
+SA.NormalMap = "rbxassetid://75074216652378"
+SA.RoughnessMap = "rbxassetid://112379003610843"
+
+local SA2 = Instance.new("SurfaceAppearance")
+SA2.Parent = dir
+SA2.Name = "SurfaceAppearance2"
+SA2.Color = Color3.fromRGB(255, 255, 255)
+SA2.EmissiveStrength = 1
+SA2.ColorMap = "rbxassetid://94164067871562"
+SA2.MetalnessMap = "rbxassetid://103461041"
+SA2.NormalMap = ""
+SA2.RoughnessMap = "rbxassetid://4504689679"
+
+local Model = Instance.new("Model")
+Model.Parent = dir
+
+local P1 = Instance.new("MeshPart")
+P1.Parent = Model
+P1.Name = "1"
+P1.Color = Color3.fromRGB(198, 148, 159)
+P1.Material = Enum.Material.Neon
+P1.MeshId = "rbxassetid://79216479221199"
+P1.Reflectance = 0
+P1.Transparency = 1
+P1.Size = Vector3.new(0.235, 0.226, 0.02)
+P1.Position = Vector3.new(248.68, 0.98, -427.285)
+P1.Anchored = false
+P1.Massless = true
+P1.CanCollide = false
+P1.CanQuery = false
+P1.CanTouch = false
+
+local P2 = Instance.new("MeshPart")
+P2.Parent = Model
+P2.Name = "2"
+P2.Color = Color3.fromRGB(198, 148, 159)
+P2.Material = Enum.Material.Neon
+P2.MeshId = "rbxassetid://79216479221199"
+P2.Reflectance = 0
+P2.Transparency = 1
+P2.Size = Vector3.new(0.235, 0.226, 0.02)
+P2.Position = Vector3.new(248.68, 0.98, -427.215)
+P2.Anchored = false
+P2.Massless = true
+P2.CanCollide = false
+P2.CanQuery = false
+P2.CanTouch = false
+
+local P3 = Instance.new("MeshPart")
+P3.Parent = Model
+P3.Name = "3"
+P3.Color = Color3.fromRGB(198, 148, 159)
+P3.Material = Enum.Material.Neon
+P3.MeshId = "rbxassetid://79216479221199"
+P3.Reflectance = 0
+P3.Transparency = 1
+P3.Size = Vector3.new(0.235, 0.226, 0.02)
+P3.Position = Vector3.new(248.68, 0.98, -427.145)
+P3.Anchored = false
+P3.Massless = true
+P3.CanCollide = false
+P3.CanQuery = false
+P3.CanTouch = false
+
+local P4 = Instance.new("MeshPart")
+P4.Parent = Model
+P4.Name = "4"
+P4.Color = Color3.fromRGB(198, 148, 159)
+P4.Material = Enum.Material.Neon
+P4.MeshId = "rbxassetid://79216479221199"
+P4.Reflectance = 0
+P4.Transparency = 1
+P4.Size = Vector3.new(0.235, 0.226, 0.02)
+P4.Position = Vector3.new(248.68, 0.98, -427.075)
+P4.Anchored = false
+P4.Massless = true
+P4.CanCollide = false
+P4.CanQuery = false
+P4.CanTouch = false
+
+local P5 = Instance.new("MeshPart")
+P5.Parent = Model
+P5.Name = "5"
+P5.Color = Color3.fromRGB(198, 148, 159)
+P5.Material = Enum.Material.Neon
+P5.MeshId = "rbxassetid://79216479221199"
+P5.Reflectance = 0
+P5.Transparency = 1
+P5.Size = Vector3.new(0.235, 0.226, 0.02)
+P5.Position = Vector3.new(248.68, 0.98, -427.005)
+P5.Anchored = false
+P5.Massless = true
+P5.CanCollide = false
+P5.CanQuery = false
+P5.CanTouch = false
+
+local P6 = Instance.new("MeshPart")
+P6.Parent = Model
+P6.Name = "6"
+P6.Color = Color3.fromRGB(198, 148, 159)
+P6.Material = Enum.Material.Neon
+P6.MeshId = "rbxassetid://79216479221199"
+P6.Reflectance = 0
+P6.Transparency = 1
+P6.Size = Vector3.new(0.235, 0.226, 0.02)
+P6.Position = Vector3.new(248.68, 0.98, -426.935)
+P6.Anchored = false
+P6.Massless = true
+P6.CanCollide = false
+P6.CanQuery = false
+P6.CanTouch = false
+
+local P7 = Instance.new("MeshPart")
+P7.Parent = Model
+P7.Name = "7"
+P7.Color = Color3.fromRGB(198, 148, 159)
+P7.Material = Enum.Material.Neon
+P7.MeshId = "rbxassetid://79216479221199"
+P7.Reflectance = 0
+P7.Transparency = 1
+P7.Size = Vector3.new(0.235, 0.226, 0.02)
+P7.Position = Vector3.new(248.68, 0.98, -426.865)
+P7.Anchored = false
+P7.Massless = true
+P7.CanCollide = false
+P7.CanQuery = false
+P7.CanTouch = false
+
+local P8 = Instance.new("MeshPart")
+P8.Parent = Model
+P8.Name = "8"
+P8.Color = Color3.fromRGB(198, 148, 159)
+P8.Material = Enum.Material.Neon
+P8.MeshId = "rbxassetid://79216479221199"
+P8.Reflectance = 0
+P8.Transparency = 1
+P8.Size = Vector3.new(0.235, 0.226, 0.02)
+P8.Position = Vector3.new(248.68, 0.98, -426.795)
+P8.Anchored = false
+P8.Massless = true
+P8.CanCollide = false
+P8.CanQuery = false
+P8.CanTouch = false
+
+local P9 = Instance.new("MeshPart")
+P9.Parent = Model
+P9.Name = "9"
+P9.Color = Color3.fromRGB(198, 148, 159)
+P9.Material = Enum.Material.Neon
+P9.MeshId = "rbxassetid://79216479221199"
+P9.Reflectance = 0
+P9.Transparency = 1
+P9.Size = Vector3.new(0.235, 0.226, 0.02)
+P9.Position = Vector3.new(248.68, 0.98, -426.725)
+P9.Anchored = false
+P9.Massless = true
+P9.CanCollide = false
+P9.CanQuery = false
+P9.CanTouch = false
+
+local P10 = Instance.new("MeshPart")
+P10.Parent = Model
+P10.Name = "10"
+P10.Color = Color3.fromRGB(198, 148, 159)
+P10.Material = Enum.Material.Neon
+P10.MeshId = "rbxassetid://79216479221199"
+P10.Reflectance = 0
+P10.Transparency = 1
+P10.Size = Vector3.new(0.235, 0.226, 0.02)
+P10.Position = Vector3.new(248.68, 0.98, -426.655)
+P10.Anchored = false
+P10.Massless = true
+P10.CanCollide = false
+P10.CanQuery = false
+P10.CanTouch = false
+
+local P11 = Instance.new("MeshPart")
+P11.Parent = Model
+P11.Name = "11"
+P11.Color = Color3.fromRGB(198, 148, 159)
+P11.Material = Enum.Material.Neon
+P11.MeshId = "rbxassetid://79216479221199"
+P11.Reflectance = 0
+P11.Transparency = 1
+P11.Size = Vector3.new(0.235, 0.226, 0.02)
+P11.Position = Vector3.new(248.68, 0.98, -426.585)
+P11.Anchored = false
+P11.Massless = true
+P11.CanCollide = false
+P11.CanQuery = false
+P11.CanTouch = false
+
+local P12 = Instance.new("MeshPart")
+P12.Parent = Model
+P12.Name = "12"
+P12.Color = Color3.fromRGB(198, 148, 159)
+P12.Material = Enum.Material.Neon
+P12.MeshId = "rbxassetid://79216479221199"
+P12.Reflectance = 0
+P12.Transparency = 1
+P12.Size = Vector3.new(0.235, 0.226, 0.02)
+P12.Position = Vector3.new(248.68, 0.98, -426.515)
+P12.Anchored = false
+P12.Massless = true
+P12.CanCollide = false
+P12.CanQuery = false
+P12.CanTouch = false
+
+local P13 = Instance.new("MeshPart")
+P13.Parent = Model
+P13.Name = "13"
+P13.Color = Color3.fromRGB(198, 148, 159)
+P13.Material = Enum.Material.Neon
+P13.MeshId = "rbxassetid://79216479221199"
+P13.Reflectance = 0
+P13.Transparency = 1
+P13.Size = Vector3.new(0.235, 0.226, 0.02)
+P13.Position = Vector3.new(248.68, 0.98, -426.445)
+P13.Anchored = false
+P13.Massless = true
+P13.CanCollide = false
+P13.CanQuery = false
+P13.CanTouch = false
+
+local P14 = Instance.new("MeshPart")
+P14.Parent = Model
+P14.Name = "14"
+P14.Color = Color3.fromRGB(198, 148, 159)
+P14.Material = Enum.Material.Neon
+P14.MeshId = "rbxassetid://79216479221199"
+P14.Reflectance = 0
+P14.Transparency = 1
+P14.Size = Vector3.new(0.235, 0.226, 0.02)
+P14.Position = Vector3.new(248.68, 0.98, -426.375)
+P14.Anchored = false
+P14.Massless = true
+P14.CanCollide = false
+P14.CanQuery = false
+P14.CanTouch = false
+
+local P15 = Instance.new("MeshPart")
+P15.Parent = Model
+P15.Name = "15"
+P15.Color = Color3.fromRGB(198, 148, 159)
+P15.Material = Enum.Material.Neon
+P15.MeshId = "rbxassetid://79216479221199"
+P15.Reflectance = 0
+P15.Transparency = 1
+P15.Size = Vector3.new(0.235, 0.226, 0.02)
+P15.Position = Vector3.new(248.68, 0.98, -426.305)
+P15.Anchored = false
+P15.Massless = true
+P15.CanCollide = false
+P15.CanQuery = false
+P15.CanTouch = false
+
+local P16 = Instance.new("MeshPart")
+P16.Parent = Model
+P16.Name = "16"
+P16.Color = Color3.fromRGB(198, 148, 159)
+P16.Material = Enum.Material.Neon
+P16.MeshId = "rbxassetid://79216479221199"
+P16.Reflectance = 0
+P16.Transparency = 1
+P16.Size = Vector3.new(0.235, 0.226, 0.02)
+P16.Position = Vector3.new(248.68, 0.98, -426.234)
+P16.Anchored = false
+P16.Massless = true
+P16.CanCollide = false
+P16.CanQuery = false
+P16.CanTouch = false
+
+local P17 = Instance.new("MeshPart")
+P17.Parent = Model
+P17.Name = "17"
+P17.Color = Color3.fromRGB(198, 148, 159)
+P17.Material = Enum.Material.Neon
+P17.MeshId = "rbxassetid://79216479221199"
+P17.Reflectance = 0
+P17.Transparency = 1
+P17.Size = Vector3.new(0.235, 0.226, 0.02)
+P17.Position = Vector3.new(248.68, 0.98, -426.164)
+P17.Anchored = false
+P17.Massless = true
+P17.CanCollide = false
+P17.CanQuery = false
+P17.CanTouch = false
+
+local P18 = Instance.new("MeshPart")
+P18.Parent = Model
+P18.Name = "18"
+P18.Color = Color3.fromRGB(198, 148, 159)
+P18.Material = Enum.Material.Neon
+P18.MeshId = "rbxassetid://79216479221199"
+P18.Reflectance = 0
+P18.Transparency = 1
+P18.Size = Vector3.new(0.235, 0.226, 0.02)
+P18.Position = Vector3.new(248.68, 0.98, -426.094)
+P18.Anchored = false
+P18.Massless = true
+P18.CanCollide = false
+P18.CanQuery = false
+P18.CanTouch = false
+
+local P19 = Instance.new("MeshPart")
+P19.Parent = Model
+P19.Name = "19"
+P19.Color = Color3.fromRGB(198, 148, 159)
+P19.Material = Enum.Material.Neon
+P19.MeshId = "rbxassetid://79216479221199"
+P19.Reflectance = 0
+P19.Transparency = 1
+P19.Size = Vector3.new(0.235, 0.226, 0.02)
+P19.Position = Vector3.new(248.68, 0.98, -426.024)
+P19.Anchored = false
+P19.Massless = true
+P19.CanCollide = false
+P19.CanQuery = false
+P19.CanTouch = false
+
+local W2 = Instance.new("ManualWeld")
+W2.Parent = P1
+W2.C1 = CFrame.new(0, 0, -0.07)
+W2.Part0 = P1
+W2.Part1 = P2
+
+local W3 = Instance.new("ManualWeld")
+W3.Parent = P1
+W3.C1 = CFrame.new(0, 0, -0.14)
+W3.Part0 = P1
+W3.Part1 = P3
+
+local W4 = Instance.new("ManualWeld")
+W4.Parent = P1
+W4.C1 = CFrame.new(0, 0, -0.21)
+W4.Part0 = P1
+W4.Part1 = P4
+
+local W5 = Instance.new("ManualWeld")
+W5.Parent = P1
+W5.C1 = CFrame.new(0, 0, -0.28)
+W5.Part0 = P1
+W5.Part1 = P5
+
+local W6 = Instance.new("ManualWeld")
+W6.Parent = P1
+W6.C1 = CFrame.new(0, 0, -0.35)
+W6.Part0 = P1
+W6.Part1 = P6
+
+local W7 = Instance.new("ManualWeld")
+W7.Parent = P1
+W7.C1 = CFrame.new(0, 0, -0.42)
+W7.Part0 = P1
+W7.Part1 = P7
+
+local W8 = Instance.new("ManualWeld")
+W8.Parent = P1
+W8.C1 = CFrame.new(0, 0, -0.49)
+W8.Part0 = P1
+W8.Part1 = P8
+
+local W9 = Instance.new("ManualWeld")
+W9.Parent = P1
+W9.C1 = CFrame.new(0, 0, -0.56)
+W9.Part0 = P1
+W9.Part1 = P9
+
+local W10 = Instance.new("ManualWeld")
+W10.Parent = P1
+W10.C1 = CFrame.new(0, 0, -0.63)
+W10.Part0 = P1
+W10.Part1 = P10
+
+local W11 = Instance.new("ManualWeld")
+W11.Parent = P1
+W11.C1 = CFrame.new(0, 0, -0.7)
+W11.Part0 = P1
+W11.Part1 = P11
+
+local W12 = Instance.new("ManualWeld")
+W12.Parent = P1
+W12.C1 = CFrame.new(0, 0, -0.77)
+W12.Part0 = P1
+W12.Part1 = P12
+
+local W13 = Instance.new("ManualWeld")
+W13.Parent = P1
+W13.C1 = CFrame.new(0, 0, -0.84)
+W13.Part0 = P1
+W13.Part1 = P13
+
+local W14 = Instance.new("ManualWeld")
+W14.Parent = P1
+W14.C1 = CFrame.new(0, 0, -0.91)
+W14.Part0 = P1
+W14.Part1 = P14
+
+local W15 = Instance.new("ManualWeld")
+W15.Parent = P1
+W15.C1 = CFrame.new(0, 0, -0.98)
+W15.Part0 = P1
+W15.Part1 = P15
+
+local W16 = Instance.new("ManualWeld")
+W16.Parent = P1
+W16.C1 = CFrame.new(0, 0, -1.05)
+W16.Part0 = P1
+W16.Part1 = P16
+
+local W17 = Instance.new("ManualWeld")
+W17.Parent = P1
+W17.C1 = CFrame.new(0, 0, -1.12)
+W17.Part0 = P1
+W17.Part1 = P17
+
+local W18 = Instance.new("ManualWeld")
+W18.Parent = P1
+W18.C1 = CFrame.new(0, 0, -1.19)
+W18.Part0 = P1
+W18.Part1 = P18
+
+local W19 = Instance.new("ManualWeld")
+W19.Parent = P1
+W19.C1 = CFrame.new(0, 0, -1.26)
+W19.Part0 = P1
+W19.Part1 = P19
+
+local Logo = Instance.new("MeshPart")
+Logo.Parent = dir
+Logo.Name = "LogoPart"
+Logo.Color = Color3.fromRGB(165, 128, 136)
+Logo.Material = Enum.Material.Neon
+Logo.MeshId = "rbxassetid://135570140316678"
+Logo.Reflectance = 0
+Logo.Transparency = 0
+Logo.Size = Vector3.new(0.053, 0.114, 0.002)
+Logo.Position = Vector3.new(238.866, 0.991, -434.521)
+Logo.Orientation = Vector3.new(90, 90, 0)
+Logo.PivotOffset = CFrame.new(0, -0.004, 0) * CFrame.Angles(math.rad(90), 0, 0)
+Logo.CanCollide = false
+Logo.CanQuery = false
+Logo.CanTouch = false
+Logo.Anchored = true
+Logo.Massless = true
+
+local Text = Instance.new("MeshPart")
+Text.Parent = dir
+Text.Name = "TextPart"
+Text.MeshId = "rbxassetid://72807008691769"
+Text.Material = Enum.Material.Neon
+Text.Color = Color3.fromRGB(165, 128, 136)
+Text.Reflectance = 0
+Text.Transparency = 0
+Text.Size = Vector3.new(0.237, 0.059, 0.43)
+Text.Position = Vector3.new(240.107, 0.985, -434.524)
+Text.Orientation = Vector3.new(-90, 0, 0)
+Text.PivotOffset = CFrame.new(0, 0.004, 0.005) * CFrame.Angles(math.rad(-90), math.rad(-90), 0)
+Text.CanCollide = false
+Text.CanQuery = false
+Text.CanTouch = false
+Text.Anchored = true
+Text.Massless = true
+
+local LogoWeld = Instance.new("ManualWeld")
+LogoWeld.Parent = dir
+LogoWeld.Name = "LogoWeld"
+LogoWeld.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, math.rad(-90), 0)
+LogoWeld.C1 = CFrame.new(0.004, 0.018, 0.794) * CFrame.Angles(0, math.rad(-90), 0)
+
+local ModelWeld = Instance.new("ManualWeld")
+ModelWeld.Parent = dir
+ModelWeld.Name = "ModelWeld"
+ModelWeld.C0 = CFrame.new(0, 0, 0)
+ModelWeld.C1 = CFrame.new(0.001, 0.028, 0.608)
+
+local TextWeld = Instance.new("ManualWeld")
+TextWeld.Parent = dir
+TextWeld.Name = "TextWeld"
+TextWeld.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(0, math.rad(-90), 0)
+TextWeld.C1 = CFrame.new(0.001, 0.033, -0.441) * CFrame.Angles(0, math.rad(-90), 0)
