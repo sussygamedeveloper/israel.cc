@@ -1,4 +1,4 @@
 return {
-  "annie869"
+  "annie869",
   "Lotus207"
 }
